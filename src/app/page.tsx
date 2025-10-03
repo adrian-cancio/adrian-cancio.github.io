@@ -110,8 +110,8 @@ export default function Home() {
             className="inline-flex items-center gap-1.5 sm:gap-2 rounded-md border border-sky-400/30 bg-sky-400/10 px-3 sm:px-4 py-1.5 sm:py-2 font-medium font-mono text-sky-300 text-xs sm:text-sm shadow-[0_0_20px_-5px_rgba(56,189,248,0.5)] transition hover:bg-sky-400/20 hover:border-sky-400/50 hover:shadow-[0_0_30px_-5px_rgba(56,189,248,0.8)]"
             href="#contact"
           >
-            <span className="hidden xs:inline">Let&apos;s talk</span>
-            <span className="xs:hidden">Talk</span>
+            <span className="hidden sm:inline">Let&apos;s talk</span>
+            <span className="sm:hidden">Talk</span>
             <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" aria-hidden />
           </Link>
         </nav>
