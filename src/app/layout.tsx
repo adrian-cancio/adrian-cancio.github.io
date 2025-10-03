@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Adrian Cancio | Cloud DevOps Engineer & Automation Specialist",
+    "Adrian Cancio | Cloud DevOps & Automation Specialist",
   description:
     "Adrian Cancio, Software Developer at Treelogic specializing in automation, DevSecOps, Cloud/DevOps engineering, and infrastructure as code.",
   metadataBase: new URL("https://adrian.cancio.info"),
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Adrian Cancio | Cloud DevOps Engineer & Automation Specialist",
+    title: "Adrian Cancio | Cloud DevOps & Automation Specialist",
     description:
       "Full-stack developer transitioning toward Cloud/DevOps engineering with a focus on automation, IaC, and secure delivery pipelines.",
     url: "https://adrian.cancio.info",
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Adrian Cancio - Cloud DevOps Engineer & Automation Specialist",
+        alt: "Adrian Cancio - Cloud DevOps & Automation Specialist",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adrian Cancio | Cloud DevOps Engineer & Automation Specialist",
+    title: "Adrian Cancio | Cloud DevOps & Automation Specialist",
     description:
       "Full-stack developer transitioning toward Cloud/DevOps engineering with a focus on automation, IaC, and secure delivery pipelines.",
     images: ["/og-image.svg"],

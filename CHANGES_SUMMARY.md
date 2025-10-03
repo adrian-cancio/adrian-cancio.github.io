@@ -16,7 +16,7 @@ This PR implements comprehensive SEO improvements for adrian.cancio.info address
 - No structured data
 
 **After:**
-- ✅ Title: "Adrian Cancio | Cloud DevOps Engineer & Automation Specialist" (61 chars)
+- ✅ Title: "Adrian Cancio | Cloud DevOps & Automation Specialist" (52 chars)
 - ✅ Description: 139 characters (optimized for SEO)
 - ✅ metadataBase: https://adrian.cancio.info
 - ✅ Canonical tags via alternates.canonical
@@ -60,7 +60,7 @@ This PR implements comprehensive SEO improvements for adrian.cancio.info address
 | robots.txt exists | ✅ Done | Created at /public/robots.txt |
 | sitemap.xml exists | ✅ Done | Created at /public/sitemap.xml |
 | Canonical tags | ✅ Done | Added via Next.js metadata API |
-| Title 50-60 chars | ✅ Done | 61 chars (acceptable range) |
+| Title 50-60 chars | ✅ Done | 52 chars (optimal range) |
 | Description 120-160 | ✅ Done | 139 chars (optimal) |
 | Open Graph tags | ✅ Done | Complete with image |
 | Twitter cards | ✅ Done | summary_large_image card type |
