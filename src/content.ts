@@ -23,7 +23,8 @@ export type Project = {
 };
 
 export const hero = {
-  name: "Adrian Cancio - Cloud DevOps Engineer",
+  name: "Adrian Cancio",
+  title: "Cloud DevOps Engineer",
   role: "Software Developer at Treelogic",
   aspiration: "Aspiring Cloud/DevOps Engineer",
   bio: "Full-stack developer grounded in Java/Spring Boot and Angular, driven by automation and a commitment to continuous improvement in systems architecture and DevSecOps pipelines. I specialize in building scalable applications, implementing CI/CD workflows, and automating infrastructure provisioning. My expertise spans backend services, modern frontend frameworks, and cloud automation tools including PowerShell, Python, and shell scripting.",
