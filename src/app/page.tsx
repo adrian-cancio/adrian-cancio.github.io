@@ -136,7 +136,7 @@ export default function Home() {
             <p className="text-base sm:text-lg font-medium text-slate-200/90 font-mono">
               <span className="text-sky-400">$</span> {hero.role}
             </p>
-            <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-4 sm:line-clamp-none">
+            <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300">
               {hero.bio}
             </p>
             <div className="flex flex-col gap-3 sm:gap-4 sm:flex-row">
@@ -171,7 +171,7 @@ export default function Home() {
                   </span>
                   <div className="min-w-0">
                     <p className="font-medium font-mono text-sm sm:text-base text-white group-hover:text-sky-300 transition-colors">{title}</p>
-                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed line-clamp-3">{description}</p>
+                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{description}</p>
                   </div>
                 </div>
               ))}
@@ -208,7 +208,7 @@ export default function Home() {
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Current mission
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
               {about.currentFocus}
             </p>
           </div>
@@ -216,7 +216,7 @@ export default function Home() {
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Career vision
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
               {about.careerVision}
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function Home() {
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Active learning
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
               {about.learning}
             </p>
           </div>
@@ -280,12 +280,12 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Infrastructure as Code
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
               I treat infrastructure configuration with the same rigor as application code. Using tools like <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PowerShell</a> and 
               shell scripting, I create declarative, version-controlled infrastructure definitions that ensure consistency across environments. 
               This approach eliminates configuration drift and makes infrastructure changes reviewable, testable, and reversible.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
               My <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">automation projects</a> demonstrate 
               practical applications of IaC principles, from automated environment provisioning to security hardening scripts that can be deployed across entire infrastructure fleets.
             </p>
@@ -294,12 +294,12 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Security-First Development
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
               Security isn&apos;t an afterthought—it&apos;s integrated into every phase of the development lifecycle. 
               I implement automated security scanning in <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">CI/CD pipelines</a>, 
               follow the principle of least privilege in infrastructure design, and stay current with emerging threats like post-quantum cryptography challenges.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
               Projects like the <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PQC DevSecOps Pipeline</a> showcase 
               my commitment to building security guardrails that protect systems without slowing down development velocity.
             </p>
@@ -308,11 +308,11 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Continuous Integration & Delivery
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
               Modern software delivery requires automation at every step. I design and implement CI/CD pipelines that automate testing, security scanning, and deployment processes. 
               These pipelines provide fast feedback loops, enabling teams to ship features confidently and frequently.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
               By combining automated testing with <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">monitoring and observability tools</a>, 
               I create systems that not only deploy automatically but also provide insights into application health and performance in production.
             </p>
@@ -321,12 +321,12 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Developer Experience
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
               Great tools empower great work. I invest time in creating developer experiences that reduce friction and boost productivity. 
               From crafting <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">optimized development environments</a> to 
               building reusable utilities and scripts, I focus on eliminating repetitive tasks.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
               Tools like my <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Neovim configuration</a> and 
               <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> automation scripts</a> reflect 
               this philosophy, providing efficient workflows that let developers focus on solving problems rather than fighting with tools.
@@ -526,7 +526,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         </Link>
       </div>
       <h3 className="mt-3 sm:mt-4 text-lg sm:text-xl font-bold text-white tracking-tight">{project.title}</h3>
-      <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-slate-300 line-clamp-4">{project.description}</p>
+      <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">{project.description}</p>
       <div className="mt-4 sm:mt-5 flex flex-wrap gap-1.5 sm:gap-2">
         {project.stack.map((tag) => (
           <span

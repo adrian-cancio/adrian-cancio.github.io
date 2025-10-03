@@ -55,6 +55,13 @@ code, pre {
   font-family: var(--font-geist-mono), 'Courier New', monospace;
 }
 
+/* Improved text wrapping for better readability */
+p, .text-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
 /* Utility classes for improved layout and visual hierarchy */
 .line-clamp-2 {
   display: -webkit-box;
