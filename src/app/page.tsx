@@ -21,7 +21,7 @@ import type { Project as ProjectType } from "@/content";
 import type { LucideIcon } from "lucide-react";
 
 const sectionClass =
-  "relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 py-12 sm:py-16 md:py-20";
+  "relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 py-10 sm:py-14 md:py-16";
 
 type SectionProps = {
   id: string;
@@ -34,22 +34,22 @@ type SectionProps = {
 function Section({ id, eyebrow, title, description, children }: SectionProps) {
   return (
     <section id={id} className={sectionClass}>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3 sm:gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-2xl">
           <p className="uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs font-semibold font-mono text-sky-400 flex items-center gap-2">
             <span className="text-sky-400">{'//\u00A0'}</span>{eyebrow}
           </p>
-          <h2 className="mt-3 text-2xl sm:text-3xl font-bold md:text-4xl lg:text-5xl text-slate-100 tracking-tight">
+          <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl lg:text-5xl text-slate-100 tracking-tight">
             {title}
           </h2>
           {description ? (
-            <p className="mt-4 text-sm sm:text-base leading-7 text-slate-300">
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-7 text-slate-300">
               {description}
             </p>
           ) : null}
         </div>
       </div>
-      <div className="mt-8 sm:mt-10">{children}</div>
+      <div className="mt-6 sm:mt-8">{children}</div>
     </section>
   );
 }
@@ -84,7 +84,7 @@ const projectPalette: Record<
 export default function Home() {
   return (
     <Fragment>
-      <header className="relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 pt-12 sm:pt-16 pb-16 sm:pb-24">
+      <header className="relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 pt-10 sm:pt-12 pb-12 sm:pb-16">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute inset-x-4 -top-28 h-[450px] rounded-full bg-sky-500/20 blur-[160px]" />
           <div className="absolute inset-x-20 top-24 h-[280px] rounded-full bg-indigo-500/20 blur-[180px]" />
@@ -122,11 +122,11 @@ export default function Home() {
 
         <div
           className={clsx(
-            "relative mt-12 sm:mt-16 grid gap-6 sm:gap-10 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-6 sm:p-10 md:grid-cols-[minmax(0,1fr)_minmax(0,300px)] md:p-14 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
+            "relative mt-10 sm:mt-12 grid gap-6 sm:gap-8 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-6 sm:p-8 md:grid-cols-[minmax(0,1fr)_minmax(0,300px)] md:p-10 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
             heroBackground,
           )}
         >
-          <div className="relative z-10 flex flex-col gap-4 sm:gap-6">
+          <div className="relative z-10 flex flex-col gap-4 sm:gap-5">
             <span className="inline-flex items-center gap-2 self-start rounded-md border border-sky-400/30 bg-sky-400/10 px-3 sm:px-4 py-1 sm:py-1.5 text-[10px] sm:text-xs font-mono font-medium uppercase tracking-[0.25em] sm:tracking-[0.3em] text-sky-300 shadow-[0_0_15px_-5px_rgba(56,189,248,0.5)]">
               <span className="text-sky-400">{'//\u00A0'}</span>{hero.aspiration}
             </span>
@@ -136,7 +136,7 @@ export default function Home() {
             <p className="text-base sm:text-lg font-medium text-slate-200/90 font-mono">
               <span className="text-sky-400">$</span> {hero.role}
             </p>
-            <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300">
+            <p className="max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-4 sm:line-clamp-none">
               {hero.bio}
             </p>
             <div className="flex flex-col gap-3 sm:gap-4 sm:flex-row">
@@ -156,7 +156,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative z-10 flex flex-col gap-4 sm:gap-6 rounded-lg sm:rounded-xl border border-sky-400/20 bg-slate-900/60 p-5 sm:p-6 backdrop-blur shadow-[0_0_30px_-10px_rgba(56,189,248,0.2)]">
+          <div className="relative z-10 flex flex-col gap-4 sm:gap-5 rounded-lg sm:rounded-xl border border-sky-400/20 bg-slate-900/60 p-5 sm:p-6 backdrop-blur shadow-[0_0_30px_-10px_rgba(56,189,248,0.2)]">
             <h3 className="text-xs sm:text-sm font-semibold font-mono uppercase tracking-[0.2em] sm:tracking-[0.25em] text-sky-300 border-b border-sky-400/20 pb-2">
               <span className="text-sky-400">$</span> Trajectory
             </h3>
@@ -169,9 +169,9 @@ export default function Home() {
                   <span className="mt-0.5 sm:mt-1 rounded-md bg-sky-400/10 p-1.5 sm:p-2 text-sky-400 border border-sky-400/20 group-hover:bg-sky-400/20 transition-colors flex-shrink-0">
                     <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden />
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-medium font-mono text-sm sm:text-base text-white group-hover:text-sky-300 transition-colors">{title}</p>
-                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{description}</p>
+                    <p className="text-xs sm:text-sm text-slate-400 leading-relaxed line-clamp-3">{description}</p>
                   </div>
                 </div>
               ))}
@@ -186,7 +186,7 @@ export default function Home() {
         title="Rooted in full-stack delivery, accelerating toward Cloud & DevOps"
         description={about.valueProposition}
       >
-        <div className="mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
+        <div className="mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
           <p className="mb-4">
             My journey in software development began with a focus on building robust applications using enterprise-grade technologies. 
             Today, I combine that foundation with cloud automation expertise to deliver modern, scalable solutions. 
@@ -203,12 +203,12 @@ export default function Home() {
             This portfolio showcases my ability to bridge development and operations, creating systems that are both powerful and maintainable.
           </p>
         </div>
-        <div className="grid gap-6 sm:gap-10 sm:grid-cols-3">
+        <div className="grid gap-5 sm:gap-6 sm:grid-cols-3">
           <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-sky-400/5 p-5 sm:p-6 hover:border-sky-400/40 transition-all duration-300 hover:shadow-[0_0_30px_-10px_rgba(56,189,248,0.3)]">
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Current mission
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
               {about.currentFocus}
             </p>
           </div>
@@ -216,7 +216,7 @@ export default function Home() {
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Career vision
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
               {about.careerVision}
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function Home() {
             <h3 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Active learning
             </h3>
-            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300">
+            <p className="mt-3 sm:mt-4 text-sm leading-6 sm:leading-7 text-slate-300 line-clamp-5">
               {about.learning}
             </p>
           </div>
@@ -236,7 +236,7 @@ export default function Home() {
         eyebrow="Technical stack"
         title="Tools that shape resilient, automated delivery"
       >
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
           {techStack.map(({ title, focus, items, icon: Icon }) => (
             <article
               key={title}
@@ -255,7 +255,7 @@ export default function Home() {
                   ) : null}
                 </div>
               </div>
-              <div className="mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2">
+              <div className="mt-4 sm:mt-5 flex flex-wrap gap-1.5 sm:gap-2">
                 {items.map((item) => (
                   <span
                     key={item}
@@ -275,58 +275,58 @@ export default function Home() {
         eyebrow="Development philosophy"
         title="Building reliable systems through automation and best practices"
       >
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
-          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-4">
+        <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
+          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Infrastructure as Code
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-4">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
               I treat infrastructure configuration with the same rigor as application code. Using tools like <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PowerShell</a> and 
               shell scripting, I create declarative, version-controlled infrastructure definitions that ensure consistency across environments. 
               This approach eliminates configuration drift and makes infrastructure changes reviewable, testable, and reversible.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
               My <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">automation projects</a> demonstrate 
               practical applications of IaC principles, from automated environment provisioning to security hardening scripts that can be deployed across entire infrastructure fleets.
             </p>
           </div>
-          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-4">
+          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Security-First Development
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-4">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
               Security isn&apos;t an afterthought—it&apos;s integrated into every phase of the development lifecycle. 
               I implement automated security scanning in <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">CI/CD pipelines</a>, 
               follow the principle of least privilege in infrastructure design, and stay current with emerging threats like post-quantum cryptography challenges.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
               Projects like the <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PQC DevSecOps Pipeline</a> showcase 
               my commitment to building security guardrails that protect systems without slowing down development velocity.
             </p>
           </div>
-          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-4">
+          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Continuous Integration & Delivery
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-4">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
               Modern software delivery requires automation at every step. I design and implement CI/CD pipelines that automate testing, security scanning, and deployment processes. 
               These pipelines provide fast feedback loops, enabling teams to ship features confidently and frequently.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
               By combining automated testing with <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">monitoring and observability tools</a>, 
               I create systems that not only deploy automatically but also provide insights into application health and performance in production.
             </p>
           </div>
-          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-4">
+          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
+            <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Developer Experience
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-4">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4 line-clamp-3 sm:line-clamp-none">
               Great tools empower great work. I invest time in creating developer experiences that reduce friction and boost productivity. 
               From crafting <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">optimized development environments</a> to 
               building reusable utilities and scripts, I focus on eliminating repetitive tasks.
             </p>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300">
+            <p className="text-sm sm:text-base leading-relaxed text-slate-300 line-clamp-2 sm:line-clamp-none">
               Tools like my <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Neovim configuration</a> and 
               <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> automation scripts</a> reflect 
               this philosophy, providing efficient workflows that let developers focus on solving problems rather than fighting with tools.
@@ -341,7 +341,7 @@ export default function Home() {
         title="Proof in shipped automation, systems, and tooling"
         description="Selected initiatives spanning infrastructure automation, secure delivery, and developer experience."
       >
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
@@ -354,7 +354,7 @@ export default function Home() {
         title="Bring Cloud/DevOps ambition to your team"
         description="I&apos;m always up for conversations about automation, platform enablement, and secure delivery pipelines."
       >
-        <div className="mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
+        <div className="mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
           <p className="mb-4">
             I&apos;m seeking opportunities to apply my <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">full-stack development expertise</a> and 
             growing <a href="#approach" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">DevOps capabilities</a> in 
@@ -368,15 +368,15 @@ export default function Home() {
             container orchestration, and building developer platforms that improve team productivity. Let&apos;s discuss how I can contribute to your infrastructure and automation goals.
           </p>
         </div>
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-slate-900/70 via-slate-900/50 to-transparent p-6 sm:p-8 shadow-[0_0_40px_-15px_rgba(56,189,248,0.2)]">
+        <div className="grid gap-5 sm:gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+          <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-slate-900/70 via-slate-900/50 to-transparent p-5 sm:p-6 shadow-[0_0_40px_-15px_rgba(56,189,248,0.2)]">
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2">
               <span className="text-sky-400">&gt;</span> Let&apos;s build together
             </h3>
             <p className="mt-3 sm:mt-4 text-sm sm:text-base text-slate-300 leading-relaxed">
               Whether it&apos;s automating environments, hardening CI/CD, or crafting full-stack features, I thrive where software and infrastructure intersect.
             </p>
-            <div className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 sm:grid-cols-2">
+            <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 sm:grid-cols-2">
               <ContactCard
                 title="Email"
                 value={contact.email}
@@ -396,7 +396,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-between gap-5 sm:gap-6 rounded-lg sm:rounded-xl border border-sky-400/20 bg-sky-400/5 p-6 sm:p-8 hover:border-sky-400/40 transition-all duration-300">
+          <div className="flex flex-col justify-between gap-4 sm:gap-5 rounded-lg sm:rounded-xl border border-sky-400/20 bg-sky-400/5 p-5 sm:p-6 hover:border-sky-400/40 transition-all duration-300">
             <div>
               <h4 className="text-base sm:text-lg font-bold text-white font-mono flex items-center gap-2">
                 <span className="text-sky-400">&gt;</span> Availability
@@ -526,8 +526,8 @@ function ProjectCard({ project }: ProjectCardProps) {
         </Link>
       </div>
       <h3 className="mt-3 sm:mt-4 text-lg sm:text-xl font-bold text-white tracking-tight">{project.title}</h3>
-      <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-slate-300">{project.description}</p>
-      <div className="mt-4 sm:mt-6 flex flex-wrap gap-1.5 sm:gap-2">
+      <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-slate-300 line-clamp-4">{project.description}</p>
+      <div className="mt-4 sm:mt-5 flex flex-wrap gap-1.5 sm:gap-2">
         {project.stack.map((tag) => (
           <span
             key={tag}
