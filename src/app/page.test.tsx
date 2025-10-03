@@ -42,8 +42,8 @@ describe("Home page", () => {
   it("provides contact information", () => {
     render(<Home />);
 
-    const emailLink = screen.getByRole("link", { name: /cancio@duck.com/i });
-    expect(emailLink).toHaveAttribute("href", "mailto:cancio@duck.com");
+    const emailLink = screen.getByRole("link", { name: /adriancancio@duck.com/i });
+    expect(emailLink).toHaveAttribute("href", "mailto:adriancancio@duck.com");
 
     const githubLink = screen.getByRole("link", { name: /adrian-cancio/i });
     expect(githubLink).toHaveAttribute(
