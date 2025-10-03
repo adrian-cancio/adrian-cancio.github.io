@@ -11,6 +11,9 @@
   --foreground: #f8fafc;
   --muted: rgba(148, 163, 184, 0.75);
   --accent: #38bdf8;
+  --grid-color: rgba(56, 189, 248, 0.05);
+  --terminal-green: #00ff41;
+  --terminal-blue: #00d4ff;
 }
 
 body {
@@ -21,6 +24,22 @@ body {
   font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   letter-spacing: -0.01em;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 a {
@@ -30,4 +49,8 @@ a {
 
 p {
   color: var(--muted);
+}
+
+code, pre {
+  font-family: var(--font-geist-mono), 'Courier New', monospace;
 }
