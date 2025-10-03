@@ -1,0 +1,6 @@
+# robots.txt for adrian.cancio.info
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://adrian.cancio.info/sitemap.xml

@@ -51,4 +51,37 @@ describe("Home page", () => {
       "https://github.com/adrian-cancio",
     );
   });
+
+  it("displays social links in footer", () => {
+    render(<Home />);
+
+    // Check for GitHub link in footer
+    const githubLinks = screen.getAllByRole("link", {
+      name: /GitHub Profile/i,
+    });
+    expect(githubLinks[0]).toHaveAttribute(
+      "href",
+      "https://github.com/adrian-cancio",
+    );
+    expect(githubLinks[0]).toHaveAttribute("rel", "noopener me");
+
+    // Check for LinkedIn link in footer
+    const linkedinLink = screen.getByRole("link", {
+      name: /LinkedIn Profile/i,
+    });
+    expect(linkedinLink).toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/adrian-cancio",
+    );
+    expect(linkedinLink).toHaveAttribute("rel", "noopener me");
+
+    // Check for Email link in footer
+    const emailContactLink = screen.getByRole("link", {
+      name: /Email Contact/i,
+    });
+    expect(emailContactLink).toHaveAttribute(
+      "href",
+      "mailto:adriancancio@duck.com",
+    );
+  });
 });
