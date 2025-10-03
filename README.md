@@ -59,7 +59,24 @@ npm run start
 
 ## Deployment
 
-The site is optimized for static or edge deployment on platforms such as Vercel or GitHub Pages. Configure your target platform to run `npm run build` during deployment and serve the generated Next.js output.
+The project is configured for static export (`output: "export"` in `next.config.ts`), producing assets under `out/` when you run `npm run build`.
+
+### GitHub Pages via Actions (recommended)
+1. Ensure GitHub Pages is set to “GitHub Actions” in the repository settings.
+2. Push to `master`. The workflow at `.github/workflows/deploy.yml` will:
+	- Install dependencies
+	- Run linting and tests
+	- Build the static site
+	- Publish the `out/` directory to GitHub Pages
+3. Once the workflow completes, your site will be available at https://adrian-cancio.github.io/.
+
+### Manual export (optional)
+
+```bash
+npm run build
+```
+
+The static assets live in `out/`. Deploy that folder to any static host if you prefer an alternative platform (e.g., Vercel, Netlify, Cloudflare Pages).
 
 ## License
 
