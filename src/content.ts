@@ -113,6 +113,7 @@ export const projects: Project[] = [
 export const contact = {
   email: "adriancancio@duck.com",
   github: "https://github.com/adrian-cancio",
+  linkedin: "https://www.linkedin.com/in/adrian-cancio",
   pronouns: "He/Him",
 };
 

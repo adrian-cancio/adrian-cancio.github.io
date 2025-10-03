@@ -5,6 +5,7 @@ import {
   ArrowRight,
   ChevronRight,
   Github,
+  Linkedin,
   Mail,
   Target,
 } from "lucide-react";
@@ -319,7 +320,41 @@ export default function Home() {
       </Section>
 
       <footer className="mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 pb-8 sm:pb-12 text-[10px] sm:text-xs text-slate-500 font-mono border-t border-sky-400/10 pt-6 sm:pt-8">
-        <span className="text-sky-400">&gt;</span> © {new Date().getFullYear()} Adrian Cancio. Built with an automation mindset.
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <span className="text-sky-400">&gt;</span> © {new Date().getFullYear()} Adrian Cancio. Built with an automation mindset.
+          </div>
+          <div className="flex items-center gap-4">
+            <Link
+              href={contact.github}
+              target="_blank"
+              rel="noopener me"
+              className="flex items-center gap-1.5 text-slate-400 hover:text-sky-400 transition-colors"
+              aria-label="GitHub Profile"
+            >
+              <Github className="h-4 w-4" />
+              <span className="hidden sm:inline">GitHub</span>
+            </Link>
+            <Link
+              href={contact.linkedin}
+              target="_blank"
+              rel="noopener me"
+              className="flex items-center gap-1.5 text-slate-400 hover:text-sky-400 transition-colors"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="h-4 w-4" />
+              <span className="hidden sm:inline">LinkedIn</span>
+            </Link>
+            <Link
+              href={`mailto:${contact.email}`}
+              className="flex items-center gap-1.5 text-slate-400 hover:text-sky-400 transition-colors"
+              aria-label="Email Contact"
+            >
+              <Mail className="h-4 w-4" />
+              <span className="hidden sm:inline">Email</span>
+            </Link>
+          </div>
+        </div>
       </footer>
     </Fragment>
   );
