@@ -79,7 +79,10 @@ export default function RootLayout({
       name: "Treelogic",
     },
     url: "https://adrian.cancio.info",
-    sameAs: ["https://github.com/adrian-cancio"],
+    sameAs: [
+      "https://github.com/adrian-cancio",
+      "https://www.linkedin.com/in/adrian-cancio",
+    ],
     description:
       "Full-stack developer transitioning toward Cloud/DevOps engineering with a focus on automation, IaC, and secure delivery pipelines.",
     knowsAbout: [
