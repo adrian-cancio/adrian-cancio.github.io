@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Adrian Cancio | Cloud DevOps Engineer & Automation Specialist",
   description:
-    "Portfolio of Adrian Cancio, Software Developer at Treelogic specializing in automation, DevSecOps, Cloud/DevOps engineering, and infrastructure as code with Spring Boot and Angular.",
+    "Adrian Cancio, Software Developer at Treelogic specializing in automation, DevSecOps, Cloud/DevOps engineering, and infrastructure as code.",
   metadataBase: new URL("https://adrian.cancio.info"),
   alternates: {
     canonical: "/",
