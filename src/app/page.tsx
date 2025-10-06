@@ -122,11 +122,11 @@ export default function Home() {
 
         <div
           className={clsx(
-            "relative mt-10 sm:mt-12 grid gap-6 sm:gap-8 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-6 sm:p-8 md:grid-cols-[minmax(0,1fr)_minmax(0,300px)] md:p-10 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
+            "relative mt-10 sm:mt-12 grid gap-5 sm:gap-6 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-5 sm:p-6 md:grid-cols-[minmax(0,1fr)_minmax(0,300px)] md:p-8 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
             heroBackground,
           )}
         >
-          <div className="relative z-10 flex flex-col gap-4 sm:gap-5">
+          <div className="relative z-10 flex flex-col gap-3 sm:gap-3.5">
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl tracking-tight">
               {hero.name}
             </h1>
@@ -153,7 +153,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative z-10 flex flex-col gap-4 sm:gap-5 rounded-lg sm:rounded-xl border border-sky-400/20 bg-slate-900/60 p-5 sm:p-6 backdrop-blur shadow-[0_0_30px_-10px_rgba(56,189,248,0.2)]">
+          <div className="relative z-10 flex flex-col gap-3 sm:gap-4 rounded-lg sm:rounded-xl border border-sky-400/20 bg-slate-900/60 p-4 sm:p-5 backdrop-blur shadow-[0_0_30px_-10px_rgba(56,189,248,0.2)]">
             <h3 className="text-xs sm:text-sm font-semibold font-mono uppercase tracking-[0.2em] sm:tracking-[0.25em] text-sky-300 border-b border-sky-400/20 pb-2">
               <span className="text-sky-400">$</span> Trajectory
             </h3>
