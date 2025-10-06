@@ -21,7 +21,7 @@ import type { Project as ProjectType } from "@/content";
 import type { LucideIcon } from "lucide-react";
 
 const sectionClass =
-  "relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 py-10 sm:py-14 md:py-16";
+  "relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 py-10 sm:py-14 md:py-16 min-h-screen flex flex-col justify-center";
 
 type SectionProps = {
   id: string;
@@ -84,7 +84,7 @@ const projectPalette: Record<
 export default function Home() {
   return (
     <Fragment>
-      <header className="relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 pt-10 sm:pt-12 pb-12 sm:pb-16">
+      <header className="relative mx-auto max-w-6xl px-4 sm:px-6 md:px-10 lg:px-14 pt-10 sm:pt-12 pb-12 sm:pb-16 min-h-screen flex flex-col justify-center">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute inset-x-4 -top-28 h-[450px] rounded-full bg-sky-500/20 blur-[160px]" />
           <div className="absolute inset-x-20 top-24 h-[280px] rounded-full bg-indigo-500/20 blur-[180px]" />
