@@ -127,9 +127,6 @@ export default function Home() {
           )}
         >
           <div className="relative z-10 flex flex-col gap-4 sm:gap-5">
-            <span className="inline-flex items-center gap-2 self-start rounded-md border border-sky-400/30 bg-sky-400/10 px-3 sm:px-4 py-1 sm:py-1.5 text-[10px] sm:text-xs font-mono font-medium uppercase tracking-[0.25em] sm:tracking-[0.3em] text-sky-300 shadow-[0_0_15px_-5px_rgba(56,189,248,0.5)]">
-              <span className="text-sky-400">{'//\u00A0'}</span>{hero.aspiration}
-            </span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl tracking-tight">
               {hero.name}
             </h1>
@@ -183,24 +180,14 @@ export default function Home() {
       <Section
         id="about"
         eyebrow="Career narrative"
-        title="Rooted in full-stack delivery, accelerating toward Cloud & DevOps"
+        title="Full-stack development with automation expertise"
         description={about.valueProposition}
       >
         <div className="mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
           <p className="mb-4">
-            My journey in software development began with a focus on building robust applications using enterprise-grade technologies. 
-            Today, I combine that foundation with cloud automation expertise to deliver modern, scalable solutions. 
-            From designing <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">RESTful APIs with Spring Boot</a> to 
-            creating <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">responsive frontends with Angular</a>, 
-            every project strengthens my understanding of the full software delivery lifecycle.
-          </p>
-          <p>
-            As I advance toward a dedicated Cloud/DevOps engineering role, I&apos;m actively building 
-            expertise through <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">hands-on automation projects</a> and 
-            continuous learning. My <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PowerShell automation scripts</a>, 
-            <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">DevSecOps pipelines</a>, 
-            and infrastructure tools demonstrate a commitment to codifying best practices and eliminating manual toil. 
-            This portfolio showcases my ability to bridge development and operations, creating systems that are both powerful and maintainable.
+            Building robust applications with <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Spring Boot and Angular</a>, 
+            while developing <a href="#approach" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">automation capabilities</a> through 
+            <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> hands-on projects</a>.
           </p>
         </div>
         <div className="grid gap-5 sm:gap-6 sm:grid-cols-3">
@@ -280,56 +267,36 @@ export default function Home() {
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Infrastructure as Code
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
-              I treat infrastructure configuration with the same rigor as application code. Using tools like <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PowerShell</a> and 
-              shell scripting, I create declarative, version-controlled infrastructure definitions that ensure consistency across environments. 
-              This approach eliminates configuration drift and makes infrastructure changes reviewable, testable, and reversible.
-            </p>
             <p className="text-sm sm:text-base leading-relaxed text-slate-300">
-              My <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">automation projects</a> demonstrate 
-              practical applications of IaC principles, from automated environment provisioning to security hardening scripts that can be deployed across entire infrastructure fleets.
+              Version-controlled infrastructure definitions using <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PowerShell</a> and 
+              shell scripting ensure consistency and make changes reviewable and reversible.
             </p>
           </div>
           <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Security-First Development
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
-              Security isn&apos;t an afterthought—it&apos;s integrated into every phase of the development lifecycle. 
-              I implement automated security scanning in <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">CI/CD pipelines</a>, 
-              follow the principle of least privilege in infrastructure design, and stay current with emerging threats like post-quantum cryptography challenges.
-            </p>
             <p className="text-sm sm:text-base leading-relaxed text-slate-300">
-              Projects like the <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">PQC DevSecOps Pipeline</a> showcase 
-              my commitment to building security guardrails that protect systems without slowing down development velocity.
+              Automated security scanning in <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">CI/CD pipelines</a> with 
+              least-privilege principles and forward-looking approaches like post-quantum cryptography.
             </p>
           </div>
           <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Continuous Integration & Delivery
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
-              Modern software delivery requires automation at every step. I design and implement CI/CD pipelines that automate testing, security scanning, and deployment processes. 
-              These pipelines provide fast feedback loops, enabling teams to ship features confidently and frequently.
-            </p>
             <p className="text-sm sm:text-base leading-relaxed text-slate-300">
-              By combining automated testing with <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">monitoring and observability tools</a>, 
-              I create systems that not only deploy automatically but also provide insights into application health and performance in production.
+              Automated testing and deployment pipelines with <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">monitoring and observability</a> provide 
+              fast feedback and production insights.
             </p>
           </div>
           <div className="rounded-lg sm:rounded-xl border border-sky-400/20 bg-gradient-to-br from-sky-400/5 via-slate-900/40 to-transparent p-5 sm:p-6">
             <h3 className="text-lg sm:text-xl font-bold text-white font-mono flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-sky-400">&gt;</span> Developer Experience
             </h3>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-300 mb-3 sm:mb-4">
-              Great tools empower great work. I invest time in creating developer experiences that reduce friction and boost productivity. 
-              From crafting <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">optimized development environments</a> to 
-              building reusable utilities and scripts, I focus on eliminating repetitive tasks.
-            </p>
             <p className="text-sm sm:text-base leading-relaxed text-slate-300">
-              Tools like my <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Neovim configuration</a> and 
-              <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> automation scripts</a> reflect 
-              this philosophy, providing efficient workflows that let developers focus on solving problems rather than fighting with tools.
+              <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Optimized tools and workflows</a> that 
+              reduce friction and eliminate repetitive tasks.
             </p>
           </div>
         </div>
@@ -351,21 +318,14 @@ export default function Home() {
       <Section
         id="contact"
         eyebrow="Let&apos;s collaborate"
-        title="Bring Cloud/DevOps ambition to your team"
-        description="I&apos;m always up for conversations about automation, platform enablement, and secure delivery pipelines."
+        title="Ready to contribute to your team"
+        description="Open to conversations about automation, infrastructure, and secure delivery."
       >
         <div className="mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed text-slate-300">
-          <p className="mb-4">
-            I&apos;m seeking opportunities to apply my <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">full-stack development expertise</a> and 
-            growing <a href="#approach" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">DevOps capabilities</a> in 
-            roles that emphasize automation, cloud infrastructure, and secure delivery. Whether you&apos;re building a new platform, migrating to the cloud, 
-            or improving existing CI/CD pipelines, I bring both software engineering fundamentals and infrastructure automation skills to the table.
-          </p>
           <p>
-            My experience at Treelogic has given me deep insights into enterprise software development, while my 
-            <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> personal automation projects</a> demonstrate 
-            initiative and continuous learning. I&apos;m particularly interested in roles that involve <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">Infrastructure as Code</a>, 
-            container orchestration, and building developer platforms that improve team productivity. Let&apos;s discuss how I can contribute to your infrastructure and automation goals.
+            Seeking opportunities in <a href="#approach" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">automation and infrastructure</a> roles. 
+            I bring <a href="#stack" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors">full-stack expertise</a> and 
+            <a href="#projects" className="text-sky-400 hover:text-sky-300 underline decoration-sky-400/30 hover:decoration-sky-300 transition-colors"> hands-on automation experience</a> to deliver reliable systems.
           </p>
         </div>
         <div className="grid gap-5 sm:gap-6 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
@@ -402,7 +362,7 @@ export default function Home() {
                 <span className="text-sky-400">&gt;</span> Availability
               </h4>
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Open to opportunities that amplify cloud adoption, DevOps culture, and automation excellence.
+                Open to opportunities in automation, infrastructure, and full-stack development.
               </p>
             </div>
             <Link
