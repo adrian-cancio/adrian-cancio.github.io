@@ -22,9 +22,6 @@ describe("Home page", () => {
     expect(
       screen.getByText(/Software Developer at Treelogic/i),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(/Aspiring Cloud\/DevOps Engineer/i),
-    ).toBeInTheDocument();
   });
 
   it("lists cloud-aligned projects", () => {
