@@ -122,7 +122,7 @@ export default function Home() {
 
         <div
           className={clsx(
-            "relative mt-8 sm:mt-10 grid gap-4 sm:gap-5 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_minmax(0,300px)] md:p-6 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
+            "relative mt-8 sm:mt-10 flex flex-col gap-4 sm:gap-5 overflow-hidden rounded-xl sm:rounded-2xl border border-sky-400/20 bg-gradient-to-br from-slate-900/95 via-slate-950/80 to-slate-900/70 p-4 sm:p-5 md:p-6 shadow-[0_0_50px_-15px_rgba(56,189,248,0.3)]",
             heroBackground,
           )}
         >
